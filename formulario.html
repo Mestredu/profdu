@@ -1,0 +1,35 @@
+<h1>Formulário: Perguntas sobre Frutas</h1>
+    <p>Responda às perguntas abaixo sobre frutas!</p>
+    
+        
+        <label for="fruta_favorita">1. Qual é a sua fruta favorita?</label>
+        <input type="text" id="fruta_favorita" name="fruta_favorita" required>
+        <br><br>
+
+        <label for="quantas_frutas">2. Quantas frutas você costuma comer por semana?</label>
+        <input type="number" id="quantas_frutas" name="quantas_frutas" min="0" required>
+        <br><br>
+
+        <label>3. Quais dessas frutas você gosta mais? (Marque todas as que se aplicam)</label><br>
+        <input type="checkbox" id="maca" name="frutas[]" value="Maçã">
+        <label for="maca">Maçã</label><br>
+        <input type="checkbox" id="banana" name="frutas[]" value="Banana">
+        <label for="banana">Banana</label><br>
+        <input type="checkbox" id="laranja" name="frutas[]" value="Laranja">
+        <label for="laranja">Laranja</label><br>
+        <input type="checkbox" id="morango" name="frutas[]" value="Morango">
+        <label for="morango">Morango</label><br>
+        <input type="checkbox" id="abacaxi" name="frutas[]" value="Abacaxi">
+        <label for="abacaxi">Abacaxi</label><br><br>
+
+        <label for="gosta_de_frutas_citricas">4. Você gosta de frutas cítricas, como limão e laranja?</label><br>
+        <input type="radio" id="sim" name="gosta_de_frutas_citricas" value="Sim" required>
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="gosta_de_frutas_citricas" value="Não">
+        <label for="nao">Não</label><br><br>
+
+        <label for="comentarios">5. Tem algum comentário sobre frutas que gostaria de compartilhar?</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar Respostas">
